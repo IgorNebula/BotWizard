@@ -1,0 +1,31 @@
+{
+  "name": "tsbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node build/index.js",
+    "start:dev": "npx nodemon",
+    "build": "rimraf ./build && tsc"
+  },
+  "author": "igorM",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.7",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
+    "eslint": "^8.56.0",
+    "nodemon": "^3.0.3",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@types/dotenv-parse-variables": "^2.0.3",
+    "@types/dotenv-safe": "^8.1.5",
+    "axios": "^1.6.7",
+    "date-fns": "^3.3.1",
+    "dotenv": "^16.4.1",
+    "playwright": "^1.41.2",
+    "telegraf": "^4.15.3",
+    "telegraf-session-local": "^2.1.1"
+  }
+}

@@ -1,0 +1,5 @@
+/.env
+/anyfiles
+/build
+/node_modules
+/session_db.json
